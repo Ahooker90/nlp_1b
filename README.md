@@ -31,19 +31,11 @@
 
 ## TODO
 
-<<<<<<< HEAD
 1.) Clean assignment description \
 2.) Each time a setting is updated the VDB is reloaded. This creates excessive wait times. \
 3.) The app should not start until the VDB is loaded. Currently, it starts then loads. This is not ideal. \
 4.) I need to export the nlp_311 environment.yml --> push to git\
 5.) Update Chainlit.md \
-=======
-1.) Clean assignment description
-2.) Each time a setting is updated the VDB is reloaded. This creates excessive wait times.
-3.) The app should not start until the VDB is loaded. Currently, it starts then loads. This is not ideal.
-4.) I need to export the nlp_311 environment.yml --> push to git
-5.) Update Chainlit.md
->>>>>>> cfa46bba21d48ba43696fe24dad8c9fc3ad77e02
 
 # Assignment Instructions
 
