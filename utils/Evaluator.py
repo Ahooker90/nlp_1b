@@ -1,4 +1,4 @@
-from DataWorker import DataWorker
+from utils.DataWorker import DataWorker
 from nltk.translate.bleu_score import sentence_bleu
 from rouge import Rouge 
 from bert_score import score

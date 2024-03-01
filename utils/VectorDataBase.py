@@ -2,7 +2,7 @@ import torch
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import FAISS
 from pprint import pprint
-from DataWorker import DataWorker
+from utils.DataWorker import DataWorker
 
 class VectorDataBase:
     def __init__(self, embedding_model,dataset_name,dataset_column):

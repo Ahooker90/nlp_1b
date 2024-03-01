@@ -1,6 +1,6 @@
-from VectorDataBase import VectorDataBase
-from Evaluator import Evaluator
-from LLM import LLM
+from utils.VectorDataBase import VectorDataBase
+from utils.Evaluator import Evaluator
+from utils.LLM import LLM
 from pprint import pprint
 import warnings
 
