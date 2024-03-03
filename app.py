@@ -7,19 +7,6 @@ import warnings
 from chainlit.input_widget import Select
 warnings.simplefilter('ignore')   
 
-"""
-vec_kwargs = {
-    'dataset_name':"databricks/databricks-dolly-15k",
-    'dataset_column': "context",
-    'embedding_model':'sentence-transformers/sentence-t5-base'}
-llm_kwargs = {
-    'llm_model': "gpt-3.5-turbo"}
-
-
-vdb = VectorDataBase(**vec_kwargs )
-llm = LLM(vdb,**llm_kwargs)
-"""
-
 @cl.on_chat_start
 async def start():
     settings = await cl.ChatSettings(
@@ -50,11 +37,10 @@ async def start():
             )
         ]
     ).send()
-    await setup_agent(settings)
 
 @cl.on_settings_update
 async def setup_agent(settings):
-    print("Setup agent with following settings: ", settings)
+    print("Setup agent with following settings: ", settings)    
     
     vec_kwargs = {
         'dataset_name':settings['dataset'],
@@ -68,7 +54,6 @@ async def setup_agent(settings):
     llm = LLM(vdb, **llm_kwargs)
 
     cl.user_session.set("llm", llm)
-
 
 @cl.on_message
 async def on_message(msg: cl.Message):
