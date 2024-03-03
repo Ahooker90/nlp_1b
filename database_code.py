@@ -12,6 +12,8 @@ def PrintCitations():
         "https://medium.com/international-school-of-ai-data-science/implementing-rag-with-langchain-and-hugging-face-28e3ea66c5f7",
         "https://python.langchain.com/docs/integrations/vectorstores/faiss",
         "https://api.python.langchain.com/en/latest/embeddings/langchain_community.embeddings.huggingface.HuggingFaceEmbeddings.html",
+        "https://huggingface.co/",
+        "https://faiss.ai/index.html"
         ]
     print("\nThis work drew inspiration from previous work. Here are a few of the primary sources used.")
     pprint(cite_list)
@@ -21,7 +23,8 @@ if __name__ == '__main__':
     vec_kwargs = {
         'dataset_name':"databricks/databricks-dolly-15k",
         'dataset_column': "context",
-        'embedding_model':'sentence-transformers/sentence-t5-base'}
+        'embedding_model' : 'google/flan-t5-base'}
+        #'embedding_model':'sentence-transformers/sentence-t5-base'}
     llm_kwargs = {
         'llm_model': "gpt-3.5-turbo"}
      
