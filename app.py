@@ -37,6 +37,7 @@ async def start():
             )
         ]
     ).send()
+    await setup_agent(settings)
 
 @cl.on_settings_update
 async def setup_agent(settings):
