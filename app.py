@@ -32,7 +32,7 @@ async def start():
             Select(
                 id="embedding model",
                 label="Embbeding - Model",
-                values=['sentence-transformers/sentence-t5-base'],
+                values=['sentence-transformers/sentence-t5-base','google/flan-t5-base'],
                 initial_index=0,
             )
         ]
