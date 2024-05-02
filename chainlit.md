@@ -1,4 +1,4 @@
-# *Welcome to Adam Hooker's 1.a Assignment for Natural Language Processing*
+# *Welcome to Adam Hooker's 1.b Assignment for Natural Language Processing*
 
 ## Knowledge base: 
 
